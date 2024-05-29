@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:layout_marginTop="120dp"
+        android:text="Hey, Are you bored do you want an activity for you ?"
+        android:textColor="#252525"
+        android:textSize="25dp"
+        android:gravity="center_horizontal">
+    </TextView>
+
+    <Button
+        android:id="@+id/btGenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tvPrompt"
+        android:backgroundTint="@color/teal_700"
+        android:text="Generate"
+        android:textAllCaps="false">
+    </Button>
+
+    <TextView
+        android:id="@+id/tvTaskHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/btGenerate"
+        android:text="Activity : "
+        android:textColor="#3A3A3A"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true">
+    </TextView>
+    <TextView
+        android:id="@+id/tvTypeHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/tvTaskHolder"
+        android:text="Type :"
+        android:textColor="#3A3A3A"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+</RelativeLayout>
